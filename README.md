@@ -12,7 +12,7 @@ The MongoDB Enterprise Operator for Kubernetes works with MongoDB Ops Manager or
   - MongoDB Monitoring Agent
 
 
-### Installing operator!
+### Installing operator !
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/mongodb/mongodb-enterprise-kubernetes/master/mongodb-enterprise.yaml
@@ -20,3 +20,10 @@ kubectl apply -f https://raw.githubusercontent.com/mongodb/mongodb-enterprise-ku
 ```
 
 operator: https://docs.mongodb.com/kubernetes-operator/stable/
+
+
+### What operator does !
+
+- Automates the provisioning of StatefulSets for the MongoDB replica set
+- Creates a deployment in MongoDB Ops Manager project
+- Configures Ops Manager for Backup, Automation, Alerting and Monitoring (BAAM!)
