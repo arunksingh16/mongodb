@@ -1,0 +1,37 @@
+apiVersion: mongodb.com/v1
+kind: MongoDB
+metadata:
+  name: my-tls-enabled-rs
+spec:
+  members: 3
+  version: 4.0.11
+
+  project: my-project
+  credentials: my-credentials
+  security:
+    tls:
+      enabled: true
+      authenticationMode: x509
+
+persistent: true
+spec:
+  members: 3
+  version: 4.0.10-ent
+  type: ReplicaSet
+
+
+  podSpec:
+    cpu: '0.25'
+    memory: 512M
+    persistence:
+      multiple:
+        data:
+          storage: 10Gi
+        journal:
+          storage: 1Gi
+          labelSelector:
+            matchLabels:
+              app: "my-app"
+        logs:
+          storage: 500M
+          storageClass: standard
