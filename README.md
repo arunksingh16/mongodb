@@ -27,3 +27,7 @@ operator: https://docs.mongodb.com/kubernetes-operator/stable/
 - Automates the provisioning of StatefulSets for the MongoDB replica set
 - Creates a deployment in MongoDB Ops Manager project
 - Configures Ops Manager for Backup, Automation, Alerting and Monitoring (BAAM!)
+
+### running ops manager
+
+https://www.mongodb.com/blog/post/running-mongodb-ops-manager-in-kubernetes
