@@ -15,10 +15,9 @@ spec:
 
 persistent: true
 spec:
-  members: 3
+  members: 1
   version: 4.0.10-ent
   type: ReplicaSet
-
 
   podSpec:
     cpu: '0.25'
